@@ -1,12 +1,12 @@
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-csdebu5svqrc738u7kag-a.virginia-postgres.render.com/postech_ecommerce
-    username: postech_ecommerce_user
-    password: ~VuNn<"u=gL,%"rf
+    url: jdbc:postgresql://${POSTGRES.HOST}/${POSTGRES.DATABASE}
+    username: ${POSTGRES.USERNAME}
+    password: ${POSTGRES.PASSWORD}
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: none
 
 services:
   pedido-service:
