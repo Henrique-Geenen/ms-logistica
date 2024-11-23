@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://${POSTGRES.HOST}/${POSTGRES.DATABASE}
-    username: ${POSTGRES.USERNAME}
-    password: ${POSTGRES.PASSWORD}
+    url: jdbc:postgresql://${POSTGRES_HOST}/${POSTGRES_DATABASE}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
